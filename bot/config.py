@@ -3,8 +3,11 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-TOKEN = os.getenv("TOKEN") # Токен пользователя
-TOKENS = os.getenv("TOKENS") # Токены пользователей (Для запуска мультибота)
+# Токен пользователя
+TOKEN = os.getenv("TOKEN")
+
+# Токены пользователей (Для запуска мультибота)
+TOKENS = ...
 
 # Эмодзи
 EMOJI = {
