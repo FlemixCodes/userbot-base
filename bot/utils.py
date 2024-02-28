@@ -16,10 +16,10 @@ def get_user_id_reply(message: Message) -> int | None:
         return message.reply_message.from_id
 
 
-def check_token_valid(api: API) -> bool:
+async def check_token_valid(api: API) -> bool:
     """Проверить access_token на валидность через объект API"""
     try:
-        api.account.get_profile_info()
+        await api.account.get_profile_info()
         return True
-    except VKAPIError[15]:
+    except VKAPIError[5]:
         return False
