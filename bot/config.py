@@ -14,5 +14,6 @@ TOKENS = ...
 EMOJI = {
     "watch": "⌚",
     "ok": "✅",
-    "user":  "👤"
+    "user":  "👤",
+    "image": "🖼"
 }
