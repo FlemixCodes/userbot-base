@@ -7,6 +7,9 @@ class Database:
         self.path = path
         self.db = None
 
+    def __str__(self):
+        return f"Database <{self.path}>"
+
     async def __aenter__(self):
         self.db = await aiosqlite.connect(self.path)
         return self
