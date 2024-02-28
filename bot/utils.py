@@ -17,7 +17,7 @@ def get_user_id_reply(message: Message) -> int | None:
 
 
 def check_token_valid(api: API) -> bool:
-    """Проверить access_token на валидность"""
+    """Проверить access_token на валидность через объект API"""
     try:
         api.account.get_profile_info()
         return True
