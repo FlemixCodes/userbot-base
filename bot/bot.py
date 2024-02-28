@@ -4,7 +4,7 @@ from vkbottle.http import AiohttpClient
 
 from bot.config import TOKEN, TOKENS
 from bot.commands import labelers
- 
+
 
 def start_bot() -> None:
     """Запуск бота"""
